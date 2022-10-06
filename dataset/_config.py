@@ -3,7 +3,7 @@ configs = {
     'stride':10,
     'time_window':2,
     # type your data_path
-    'data_path': '/mnt/c/Data/Yuxuan/ABAW',
+    'data_path': '',
     'limit_gpu':1024*4.5,
     'gpu_num': 0,
     # type your result_path need to evaluate
