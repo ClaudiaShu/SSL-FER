@@ -8,8 +8,8 @@ import PIL
 from PIL import Image
 
 detector = dlib.get_frontal_face_detector()
-cnn_detector = "/mnt/d/Data/Yuxuan/data/model/mmod_human_face_detector.dat"
-face_predictor = "/mnt/d/Data/Yuxuan/data/model/shape_predictor_68_face_landmarks.dat"
+cnn_detector = "path_to/mmod_human_face_detector.dat"
+face_predictor = "path_to/shape_predictor_68_face_landmarks.dat"
 
 def _is_tensor_clip(clip):
     return torch.is_tensor(clip) and clip.ndimension() == 4
@@ -196,5 +196,4 @@ def image_mask_image(image_file, face_predictor_path, cnn_detector_path, crop_pa
     radius = int(np.round((maxy-miny)/2+20))
     mask = cv2.circle(mask, centre, radius, (255, 255, 255), -1)
     out = np.where(mask==(0, 0, 0), image, black_img)
-    # cv2.imwrite("/mnt/c/Data/Yuxuan/VoxCeleb/test/cp_emma.jpg", out)
     return out
