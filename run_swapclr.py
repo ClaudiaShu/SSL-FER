@@ -4,7 +4,7 @@ import torch.backends.cudnn as cudnn
 from torch.utils.data import DataLoader
 from torchvision import models
 from data_aug.contrastive_learning_dataset import ContrastiveLearningDataset
-from data_aug.data_loader import videoCLR, maskCLR, swapCLR
+from data_aug.data_loader import swapCLR
 from models.resnet_simclr import ResNetSimCLR, ResNetEncoder
 from trainer_swapclr import SwapCLR
 
@@ -17,18 +17,11 @@ parser.add_argument('-comment', default='')
 parser.add_argument('-data', metavar='DIR', default='./datasets',
                     help='path to dataset')
 
-parser.add_argument('--dataset_name', default='vox1', type=str,
-                    choices=['Aff2', 'vox1', 'vox2'], help='dataset use to train') #Aff2 vox1 vox2
-parser.add_argument('--training_mode', default='swapclr', type=str,
-                    choices=['simclr','videoclr','maskclr','topkclr'], help='method to train the network') # simclr videoclr
+parser.add_argument('--dataset_name', default='vox1', type=str)
+parser.add_argument('--training_mode', default='swapclr', type=str) 
 parser.add_argument('--distr_mode', default='c', type=str,
                     choices=['a','b','c'], help='distribution of the positive pairs')
 parser.add_argument('--time_aug', default=True, type=bool, help='Use time_augmentation or not')
-parser.add_argument('--nb_frame', default=1, type=int,
-                    help='1 or n') # Number of video frames
-parser.add_argument('--sec', default=3, type=int) # length of the audio sequence
-parser.add_argument('--data_mode', default=3, type=int,
-                    help='Choose between different mode, 1: only frame, 2: only audio, 3:frame & audio')
 parser.add_argument('--resume', default=False)
 parser.add_argument('--state_dict', default='')
 parser.add_argument('-a', '--arch', metavar='ARCH', default='resnet50',
