@@ -34,8 +34,8 @@ class imgRandomLandmarkMask(object):
     def __init__(self, p=0.8):
         self.p = p
         self.detector = dlib.get_frontal_face_detector()
-        cnn_detector_path = "/mnt/d/Data/Yuxuan/data/model/mmod_human_face_detector.dat"
-        face_predictor_path = "/mnt/d/Data/Yuxuan/data/model/shape_predictor_68_face_landmarks.dat"
+        cnn_detector_path = "path_to/mmod_human_face_detector.dat"
+        face_predictor_path = "path_to/shape_predictor_68_face_landmarks.dat"
         self.cnn_detector = dlib.cnn_face_detection_model_v1(cnn_detector_path)
         self.face_predictor = dlib.shape_predictor(face_predictor_path)
         self.mode_selection = random.choice(["mouth","left_eye","right_eye"])
