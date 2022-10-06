@@ -1,25 +1,13 @@
 
 from torchvision import transforms as cv_tf
-from torchaudio import transforms as au_tf
-from data_aug import video_transforms as vd_tf
-from data_aug import audio_transforms as ad_tf
 
 from torchvision import datasets
 
 from data_aug.image_transforms import imgRandomLandmarkMask, SquarePad
 from data_aug.view_generator import ContrastiveLearningViewGenerator
 from exceptions.exceptions import InvalidDatasetSelection
-from audiomentations import (
-    Compose,
-    AddBackgroundNoise,
-    AddGaussianNoise,
-    AddGaussianSNR,
-    TimeStretch,
-    PitchShift,
-    Shift
-)
 
-from dataset.VoxCeleb_config import configs
+from dataset._config import configs
 
 MUSAN = "/mnt/d/Data/Yuxuan/VoxCeleb/musan"
 RIR = "/mnt/d/Data/Yuxuan/VoxCeleb/rirs_noises"
