@@ -17,19 +17,14 @@ parser.add_argument('-comment', default='')
 parser.add_argument('-data', metavar='DIR', default='./datasets',
                     help='path to dataset')
 
-parser.add_argument('--dataset_name', default='vox1', type=str,
-                    choices=['Aff2', 'vox1', 'vox2'], help='dataset use to train') #Aff2 vox1 vox2
-parser.add_argument('--training_mode', default='maskclr', type=str,
-                    choices=['simclr','videoclr','maskclr','topkclr'], help='method to train the network') # simclr videoclr
+parser.add_argument('--dataset_name', default='vox1', type=str)
+parser.add_argument('--training_mode', default='maskclr', type=str) 
 parser.add_argument('--distr_mode', default='c', type=str,
                     choices=['a','b','c'], help='distribution of the positive pairs')
 parser.add_argument('--time_aug', default=True, type=bool, help='Use time_augmentation or not')
-parser.add_argument('--nb_frame', default=1, type=int,
-                    help='1 or n') # Number of video frames
 parser.add_argument('--sec', default=3, type=int) # length of the audio sequence
 parser.add_argument('--data_mode', default=3, type=int,
                     help='Choose between different mode, 1: only frame, 2: only audio, 3:frame & audio')
-parser.add_argument('--resume', default=False)
 parser.add_argument('--state_dict', default='')
 parser.add_argument('-a', '--arch', metavar='ARCH', default='resnet50',
                     choices=model_names,
@@ -119,24 +114,6 @@ def main():
 
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=len(train_loader), eta_min=0,
                                                                last_epoch=-1)
-
-    epoch = 0
-    if args.resume:
-        # epoch
-        # model_state_dict = args.state_dict
-        model_state_dict = "/mnt/d/Data/Yuxuan/logging/maskclr/vox1_frame1/runs/Jun20_14-28-06_ic_xiao/checkpoint_best.pth.tar"
-        checkpoint = torch.load(model_state_dict, map_location='cuda')
-        state_dict = checkpoint['state_dict']
-        for k in list(state_dict.keys()):
-            if k.startswith('backbone.'):
-                if k.startswith('backbone') and not k.startswith('backbone.fc'):
-                    # remove prefix
-                    state_dict[k[len("backbone."):]] = state_dict[k]
-            del state_dict[k]
-        model.load_state_dict(state_dict, strict=False)
-        optimizer.load_state_dict(checkpoint['optimizer'])
-        # scheduler.load_state_dict(checkpoint['scheduler'])
-        epoch=checkpoint['epoch']
 
     # model = model.to(args.device)
     optimizer_to(optimizer, args.device)
