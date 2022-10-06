@@ -30,7 +30,7 @@ class MaskCLR(object):
         current_time = datetime.now().strftime('%b%d_%H-%M-%S')
         log_dir = os.path.join(
             'runs', current_time + '_' + socket.gethostname() + self.args.comment)
-        dir2log = f'/mnt/d/Data/Yuxuan/logging/{self.args.training_mode}/{self.args.dataset_name}_frame{self.args.nb_frame}/{log_dir}'
+        dir2log = f'path_to/logging/{self.args.training_mode}/{self.args.dataset_name}_frame{self.args.nb_frame}/{log_dir}'
         os.makedirs(dir2log, exist_ok=True)
         self.writer = SummaryWriter(log_dir=dir2log)
         logging.basicConfig(filename=os.path.join(self.writer.log_dir, 'training.log'), level=logging.DEBUG)
