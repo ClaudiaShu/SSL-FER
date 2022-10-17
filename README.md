@@ -48,6 +48,24 @@ dlib:
 
 Models can be downloaded from [here]()
 
+### Results
+| Pretrained Methods | Datasets | EXPR-F1 | EXPR-Acc | Valence-CCC | Valence-RMSE | Arousal-CCC | Arousal-RMSE |
+| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | 
+| Supervised | ImageNet | 56.7% | 56.6% | 0.563 | 0.462 | 0.480 | 0.376 |
+| [BYOL](https://proceedings.neurips.cc/paper/2020/hash/f3ada80d5c4ee70142b17b8192b2958e-Abstract.html) | VoxCeleb1 | 56.3% | 56.4% | 0.560 | 0.460 | 0.462 | 0.386 |
+| [MoCo-v2](https://arxiv.org/abs/2003.04297) | VoxCeleb1 | 56.8% | 56.8% | 0.570 | 0.454 | 0.486 | 0.378 |
+| [SimCLR](http://proceedings.mlr.press/v119/chen20j.html) | VoxCeleb1 | 57.5% | 57.7% | 0.594 | 0.431 | 0.451 | 0.387 |
+| [CycleFace](https://openaccess.thecvf.com/content/ICCV2021/html/Chang_Learning_Facial_Representations_From_the_Cycle-Consistency_of_Face_ICCV_2021_paper.html) | VoxCeleb1,2 | 48.8% | 49.7% | 0.534 | 0.492 | 0.436 | 0.383 |
+| - | - | - | - | - | - | - | - | 
+| TimeAug | VoxCeleb1 | 57.8% | 57.9% | 0.583 | 0.448 | 0.500 | 0.374 |
+| TimeAug+HardNeg | VoxCeleb1 | 58.1% | 58.3% | 0.594 | 0.437 | 0.500 | 0.373 |
+| TimeAug+HardNeg+[CutMix](https://openaccess.thecvf.com/content_ICCV_2019/html/Yun_CutMix_Regularization_Strategy_to_Train_Strong_Classifiers_With_Localizable_Features_ICCV_2019_paper.html) | VoxCeleb1 | 58.3% | 58.4% | 0.542 | 0.463 | 0.508 | 0.368 |
+| TimeAug+FaceSwap+MaskFN | VoxCeleb1 | 58.6% | 58.7% | 0.568 | 0.444 | 0.502 | 0.369  |
+| TimeAug+HardNeg+FaceSwap | VoxCeleb1 | 58.8% | 58.9% | 0.601 | 0.429 | 0.514 | 0.367 |
+| TimeAug+HardNeg+MaskFN | VoxCeleb1 | 58.9% | 58.9% | 0.578 | 0.448 | 0.493 | 0.370 |
+| TimeAug+HardNeg+FaceSwap+MaskFN | VoxCeleb1 | 59.3% | 59.3% | 0.595 | 0.435 | 0.502 | 0.372 |
+
+
 ## Citing
 
 Please cite the following paper if you use our methods in your research:
