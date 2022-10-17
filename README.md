@@ -34,6 +34,16 @@ We explored three main promising solutions in Self-supervised learning-based Fac
 
 We pretrained on [VoxCeleb1](https://mm.kaist.ac.kr/datasets/voxceleb/) dataset and evaluated on two Facial eExpression Recognition datasets, [AffectNet](http://mohammadmahoor.com/affectnet/) and [FER2013](https://www.kaggle.com/datasets/msambare/fer2013). We further evaluated on a Face Recognition dataset, [LFW](http://vis-www.cs.umass.edu/lfw/). In our experiment, we used the released version provided by scikit-learn. The usage can be found [here](https://scikit-learn.org/0.19/datasets/labeled_faces.html).
 
+## Requirements
+
+To run the script you'll need to install dlib (http://dlib.net) including its Python bindings, and OpenCV. 
+
+You'll also need to obtain the trained model from
+dlib:  
+    http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2  
+    http://dlib.net/files/mmod_human_face_detector.dat.bz2
+
+
 ## Trained Model
 
 Models can be downloaded from [here]()
@@ -50,11 +60,3 @@ Please cite the following paper if you use our methods in your research:
   year={2022}
 }
 ```
-## Requirements
-
-To run the script you'll need to install dlib (http://dlib.net) including its Python bindings, and OpenCV. 
-
-You'll also need to obtain the trained model from
-dlib:  
-    http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2  
-    http://dlib.net/files/mmod_human_face_detector.dat.bz2
