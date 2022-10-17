@@ -51,7 +51,6 @@ Models can be downloaded from [here]()
 ### Results
 | Pretrained Methods | Datasets | EXPR-F1 | EXPR-Acc | Valence-CCC | Valence-RMSE | Arousal-CCC | Arousal-RMSE |
 | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | 
-| Supervised | ImageNet | 56.7% | 56.6% | 0.563 | 0.462 | 0.480 | 0.376 |
 | [BYOL](https://proceedings.neurips.cc/paper/2020/hash/f3ada80d5c4ee70142b17b8192b2958e-Abstract.html) | VoxCeleb1 | 56.3% | 56.4% | 0.560 | 0.460 | 0.462 | 0.386 |
 | [MoCo-v2](https://arxiv.org/abs/2003.04297) | VoxCeleb1 | 56.8% | 56.8% | 0.570 | 0.454 | 0.486 | 0.378 |
 | [SimCLR](http://proceedings.mlr.press/v119/chen20j.html) | VoxCeleb1 | 57.5% | 57.7% | 0.594 | 0.431 | 0.451 | 0.387 |
