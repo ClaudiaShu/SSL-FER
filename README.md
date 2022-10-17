@@ -18,17 +18,17 @@ We explored three main promising solutions in Self-supervised learning-based Fac
 
 ### ·Positives with Same Expression
 
-✔ TimeAug - Add additional temporal shifts to generate positive pairs.
+✔ TimeAug - We added additional temporal shifts to generate positive pairs.
 
-✔ FaceSwap - Swap faces to get same expression on different faces with a low computational cost.
+✔ FaceSwap - We swapped between faces to get same expression on different faces with a low computational cost.
 
 ### ·Negatives with Same Identity
 
-✔ HardNeg - Sample with a larger time-interval to avoid identity-related shortcuts. 
+✔ HardNeg - We sampled with a larger time-interval to avoid identity-related shortcuts. 
  
 ### ·False Negatives Cancellation
 
-✔ MaskFN - Minimize the negative effects caused by false negatives using mouth-eye descriptors. 
+✔ MaskFN - We minimized the negative effects caused by false negatives using mouth-eye descriptors. 
 
 ## Dataset
 
