@@ -36,6 +36,8 @@ We pretrained on [VoxCeleb1](https://mm.kaist.ac.kr/datasets/voxceleb/) dataset 
 
 ## Trained Model
 
+Models can be downloaded from [here]()
+
 ## Citing
 
 Please cite the following paper if you use our methods in your research:
