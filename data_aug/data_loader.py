@@ -53,15 +53,15 @@ class maskCLR(Dataset):
 
         # Dataset setting
         self.dataset = self.args.dataset_name
-        self.prefix_vox1 = '/mnt/d/Data/Yuxuan/VoxCeleb/vox1'
-        file = "/mnt/c/Data/Yuxuan/VoxCeleb/vox1/vox1_frames_test.txt"
+        self.prefix_vox1 = 'pathto/VoxCeleb/vox1'
+        file = "pathto/VoxCeleb/vox1/vox1_frames_test.txt"
         self.data = open(file, 'r')
         self.paths, self.start_frames, self.end_frames, self.frames = self.get_frame()
 
         # Facial landmark extraction
         self.detector = dlib.get_frontal_face_detector()
-        cnn_detector_path = "/mnt/d/Data/Yuxuan/data/model/mmod_human_face_detector.dat"
-        face_predictor_path = "/mnt/d/Data/Yuxuan/data/model/shape_predictor_68_face_landmarks.dat"
+        cnn_detector_path = "pathto/data/model/mmod_human_face_detector.dat"
+        face_predictor_path = "pathto/data/model/shape_predictor_68_face_landmarks.dat"
         self.cnn_detector = dlib.cnn_face_detection_model_v1(cnn_detector_path)
         self.face_predictor = dlib.shape_predictor(face_predictor_path)
 
@@ -341,15 +341,15 @@ class swapCLR(Dataset):
 
         # Dataset setting
         self.dataset = self.args.dataset_name
-        self.prefix_vox1 = '/mnt/d/Data/Yuxuan/VoxCeleb/vox1'
-        file = "/mnt/c/Data/Yuxuan/VoxCeleb/vox1/vox1_frames_test.txt"
+        self.prefix_vox1 = 'pathto/VoxCeleb/vox1'
+        file = "pathto/VoxCeleb/vox1/vox1_frames_test.txt"
         self.data = open(file, 'r')
         self.paths, self.start_frames, self.end_frames, self.frames = self.get_frame()
 
         # Facial landmark extraction
         self.detector = dlib.get_frontal_face_detector()
-        cnn_detector_path = "/mnt/d/Data/Yuxuan/data/model/mmod_human_face_detector.dat"
-        face_predictor_path = "/mnt/d/Data/Yuxuan/data/model/shape_predictor_68_face_landmarks.dat"
+        cnn_detector_path = "pathto/data/model/mmod_human_face_detector.dat"
+        face_predictor_path = "pathto/data/model/shape_predictor_68_face_landmarks.dat"
         self.cnn_detector = dlib.cnn_face_detection_model_v1(cnn_detector_path)
         self.face_predictor = dlib.shape_predictor(face_predictor_path)
 
