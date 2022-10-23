@@ -46,28 +46,13 @@ dlib:
 
 ### Dependencies
 
-You'll need a working Python environment to run the code. The code is based on:
-- python 3.7
-- torch 1.6.0
-- torchvision 0.7
-- CUDA 10.2
-- numpy == 1.19.2
-- pandas == 1.2.4
-- diffdist == 0.1
-- appdirs == 1.4.4
-- oslo.config == 8.7.0
-
-The recommended way to set up your environment is through the Anaconda Python distribution which provides the `conda` package manager.
-
-The required dependencies are specified in the file `requirements.txt`.
-
-Run the following command to create a new environment and install all required dependencies in it:
-
-```shell
-conda create -n env_name python=3.7   # create new environment
-source activate env_name
-pip install -r requirements.txt
-```
+You'll need a working Python environment to run the code. We tested the code based on:
+- python 3.8.13
+- torch 1.8.1
+- torchvision 0.9.1
+- CUDA 11.6
+- numpy == 1.21.6
+- pandas == 1.4.2
 
 
 ## Trained Model
