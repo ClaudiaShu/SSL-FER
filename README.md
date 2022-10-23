@@ -3,8 +3,6 @@
 Pytorch Implementation of the BMVC 2022 Paper "Revisiting Self-Supervised Contrastive
 Learning for Facial Expression Recognition" 
 
-The project is bulit based on https://github.com/sthalles/SimCLR
-
 
 ## About
 
@@ -34,7 +32,26 @@ We explored three main promising solutions in Self-supervised learning-based Fac
 
 We pretrained on [VoxCeleb1](https://mm.kaist.ac.kr/datasets/voxceleb/) dataset and evaluated on two Facial eExpression Recognition datasets, [AffectNet](http://mohammadmahoor.com/affectnet/) and [FER2013](https://www.kaggle.com/datasets/msambare/fer2013). We further evaluated on a Face Recognition dataset, [LFW](http://vis-www.cs.umass.edu/lfw/). In our experiment, we used the released version provided by scikit-learn. The usage can be found [here](https://scikit-learn.org/0.19/datasets/labeled_faces.html).
 
-## Requirements
+## Code overview
+
+The project is bulit based on the opensource code [SimCLR](https://github.com/sthalles/SimCLR)
+
+```
+.
+├── data_aug                          
+├── dataset 
+├── models 			
+│   ├── model_NLP.py                    # NLP layer              
+│   └── model_RES.py                    # backbone ResNet model      
+├── run_maskclr.py
+├── run_swapclr.py
+├── trainer_swapclr.py
+├── trainer_swapclr.py
+└── requirements.txt                    # Required packages
+```
+
+
+### Requirements
 
 To run the script you'll need to install dlib (http://dlib.net) including its Python bindings, and OpenCV. 
 
@@ -53,6 +70,7 @@ You'll need a working Python environment to run the code. We tested the code bas
 - CUDA 11.6
 - numpy == 1.21.6
 - pandas == 1.4.2
+
 
 
 ## Trained Model
