@@ -3,6 +3,7 @@
 Pytorch Implementation of the BMVC 2022 Paper "Revisiting Self-Supervised Contrastive
 Learning for Facial Expression Recognition" 
 
+Paper: [link](https://arxiv.org/abs/2210.03853)
 
 ## About
 
