@@ -79,7 +79,7 @@ You'll need a working Python environment to run the code. We tested the code bas
 Models can be downloaded from [here](https://drive.google.com/file/d/1Ko7bOqCW0qCnqHzAYTyw6_UuETi2Rccg/view?usp=sharing)
 
 ### Results
-| Pretrained Methods | Datasets | EXPR-F1 | EXPR-Acc | Valence-CCC | Valence-RMSE | Arousal-CCC | Arousal-RMSE |
+| Pretrained Methods | Datasets | EXPR-F1(↑) | EXPR-Acc(↑) | Valence-CCC(↑) | Valence-RMSE(↓) | Arousal-CCC(↑) | Arousal-RMSE(↓) |
 | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | 
 | [BYOL](https://proceedings.neurips.cc/paper/2020/hash/f3ada80d5c4ee70142b17b8192b2958e-Abstract.html) | VoxCeleb1 | 56.3% | 56.4% | 0.560 | 0.460 | 0.462 | 0.386 |
 | [MoCo-v2](https://arxiv.org/abs/2003.04297) | VoxCeleb1 | 56.8% | 56.8% | 0.570 | 0.454 | 0.486 | 0.378 |
