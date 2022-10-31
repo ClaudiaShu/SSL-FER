@@ -90,9 +90,9 @@ Models can be downloaded from [here](https://drive.google.com/file/d/1Ko7bOqCW0q
 | TimeAug+HardNeg | VoxCeleb1 | 58.1% | 58.3% | 0.594 | 0.437 | 0.500 | 0.373 |
 | TimeAug+HardNeg+[CutMix](https://openaccess.thecvf.com/content_ICCV_2019/html/Yun_CutMix_Regularization_Strategy_to_Train_Strong_Classifiers_With_Localizable_Features_ICCV_2019_paper.html) | VoxCeleb1 | 58.3% | 58.4% | 0.542 | 0.463 | 0.508 | 0.368 |
 | TimeAug+FaceSwap+MaskFN | VoxCeleb1 | 58.6% | 58.7% | 0.568 | 0.444 | 0.502 | 0.369  |
-| TimeAug+HardNeg+FaceSwap | VoxCeleb1 | 58.8% | 58.9% | 0.601 | 0.429 | 0.514 | 0.367 |
+| TimeAug+HardNeg+FaceSwap | VoxCeleb1 | 58.8% | 58.9% | **0.601** | **0.429** | **0.514** | **0.367** |
 | TimeAug+HardNeg+MaskFN | VoxCeleb1 | 58.9% | 58.9% | 0.578 | 0.448 | 0.493 | 0.370 |
-| TimeAug+HardNeg+FaceSwap+MaskFN | VoxCeleb1 | 59.3% | 59.3% | 0.595 | 0.435 | 0.502 | 0.372 |
+| TimeAug+HardNeg+FaceSwap+MaskFN | VoxCeleb1 | **59.3%** | **59.3%** | 0.595 | 0.435 | 0.502 | 0.372 |
 
 
 ## Citing
