@@ -76,7 +76,7 @@ You'll need a working Python environment to run the code. We tested the code bas
 
 ## Trained Model
 
-Models can be downloaded from [here]()
+Models can be downloaded from [here](https://drive.google.com/file/d/1Ko7bOqCW0qCnqHzAYTyw6_UuETi2Rccg/view?usp=sharing)
 
 ### Results
 | Pretrained Methods | Datasets | EXPR-F1 | EXPR-Acc | Valence-CCC | Valence-RMSE | Arousal-CCC | Arousal-RMSE |
