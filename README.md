@@ -1,6 +1,6 @@
 # SSL-FER
 
-Pytorch Implementation of the BMVC 2022 Paper "Revisiting Self-Supervised Contrastive
+**[BMVC 2022]** Pytorch Implementation of our Paper "Revisiting Self-Supervised Contrastive
 Learning for Facial Expression Recognition" 
 
 [[project]](https://claudiashu.github.io/SSLFER/) [[paper]](https://arxiv.org/abs/2210.03853)
