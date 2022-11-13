@@ -64,11 +64,10 @@ The project is bulit based on the opensource code [SimCLR](https://github.com/st
 ├── models 			
 │   ├── model_NLP.py                    # NLP layer              
 │   └── model_RES.py                    # backbone ResNet model      
-├── run_maskclr.py
-├── run_swapclr.py
+├── run_maskclr.py                      # run pretraining with maskFN
+├── run_swapclr.py                      # run pretraining with FaceSwap
 ├── trainer_swapclr.py
-├── trainer_swapclr.py
-└── requirements.txt                    # Required packages
+└── trainer_swapclr.py
 ```
 
 
