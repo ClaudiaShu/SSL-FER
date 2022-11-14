@@ -127,4 +127,4 @@ Please cite the following paper if you use our methods in your research:
 
 ## Acknowledgment
 
-Our codes are inspired by the following repo: [SimCLR](https://github.com/sthalles/SimCLR)
+Our code is inspired by: [SimCLR](https://github.com/sthalles/SimCLR)
