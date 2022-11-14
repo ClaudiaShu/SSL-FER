@@ -55,8 +55,6 @@ Code for [Downstream evaluation]
 
 ## Code overview
 
-The project is bulit based on the opensource code [SimCLR](https://github.com/sthalles/SimCLR)
-
 ```
 .
 ├── data_aug                          
@@ -126,3 +124,7 @@ Please cite the following paper if you use our methods in your research:
   year={2022}
 }
 ```
+
+## Acknowledgment
+
+Our codes are inspired by the following repo: [SimCLR](https://github.com/sthalles/SimCLR)
