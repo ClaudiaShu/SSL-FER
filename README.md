@@ -6,6 +6,21 @@ Learning for Facial Expression Recognition"
 [[project]](https://claudiashu.github.io/SSLFER/) [[paper]](https://arxiv.org/abs/2210.03853)
 
 
+
+## Citing
+
+If you find our work useful in your research please consider citing our paper:
+
+```
+@inproceedings{shu2022revisiting,
+  title={Revisiting Self-Supervised Contrastive Learning for Facial Expression Recognition},
+  author={Shu, Yuxuan and Gu, Xiao and Yang, Guang-Zhong and Lo, Benny},
+  booktitle={BMVC},
+  year={2022}
+}
+```
+
+
 ## About
 
 <img src=misc/Picture1.png>
@@ -114,19 +129,6 @@ Models can be downloaded from [here](https://drive.google.com/file/d/1Ko7bOqCW0q
 | TimeAug+HardNeg+MaskFN | VoxCeleb1 | 58.9% | 58.9% | 0.578 | 0.448 | 0.493 | 0.370 |
 | TimeAug+HardNeg+FaceSwap+MaskFN | VoxCeleb1 | **59.3%** | **59.3%** | 0.595 | 0.435 | 0.502 | 0.372 |
 
-
-## Citing
-
-Please cite the following paper if you use our methods in your research:
-
-```
-@inproceedings{shu2022revisiting,
-  title={Revisiting Self-Supervised Contrastive Learning for Facial Expression Recognition},
-  author={Shu, Yuxuan and Gu, Xiao and Yang, Guang-Zhong and Lo, Benny},
-  booktitle={BMVC},
-  year={2022}
-}
-```
 
 ## Acknowledgment
 
