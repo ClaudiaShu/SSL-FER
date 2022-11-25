@@ -49,6 +49,9 @@ With FaceSwap
 python run_swapclr.py
 ```
 
+Note:
+We present our work separately in two streams for clarity. Both `run_maskclr.py` and `run_swapclr.py` have integrated with temporal sampling on positive augmentation and hard-negative pairs generation.
+
 Todo:
 Code for [Downstream evaluation]
 
