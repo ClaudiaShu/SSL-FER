@@ -109,7 +109,7 @@ def main():
     model = ResNetSimCLR(base_model=args.arch, out_dim=args.out_dim, mode='image')
     optimizer = torch.optim.Adam(model.parameters(), args.lr, weight_decay=args.weight_decay)
 
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=len(train_loader), eta_min=0,
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs, eta_min=0,
                                                                last_epoch=-1)
 
     epoch = 0
