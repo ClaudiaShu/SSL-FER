@@ -12,11 +12,13 @@ Learning for Facial Expression Recognition"
 If you find our work useful in your research please consider citing our paper:
 
 ```
-@inproceedings{shu2022revisiting,
-  title={Revisiting Self-Supervised Contrastive Learning for Facial Expression Recognition},
-  author={Shu, Yuxuan and Gu, Xiao and Yang, Guang-Zhong and Lo, Benny},
-  booktitle={BMVC},
-  year={2022}
+@inproceedings{Shu_2022_BMVC,
+author    = {Yuxuan Shu and Xiao Gu and Guang-Zhong Yang and Benny P L Lo},
+title     = {Revisiting Self-Supervised Contrastive Learning for Facial Expression Recognition},
+booktitle = {33rd British Machine Vision Conference 2022, {BMVC} 2022, London, UK, November 21-24, 2022},
+publisher = {{BMVA} Press},
+year      = {2022},
+url       = {https://bmvc2022.mpi-inf.mpg.de/0406.pdf}
 }
 ```
 
