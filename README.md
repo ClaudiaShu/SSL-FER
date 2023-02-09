@@ -80,7 +80,7 @@ Code for [Downstream evaluation]
 ├── data_aug                          
 ├── dataset 
 ├── models 			
-│   ├── model_NLP.py                    # NLP layer              
+│   ├── model_MLP.py                    # MLP layer              
 │   └── model_RES.py                    # backbone ResNet model      
 ├── run_maskclr.py                      # run pretraining with maskFN
 ├── run_swapclr.py                      # run pretraining with FaceSwap
