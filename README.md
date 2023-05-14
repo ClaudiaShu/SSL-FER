@@ -52,7 +52,9 @@ We explored three main promising solutions in Self-supervised learning-based Fac
 We pretrained on [VoxCeleb1](https://mm.kaist.ac.kr/datasets/voxceleb/) dataset and evaluated on two Facial Expression Recognition datasets, [AffectNet](http://mohammadmahoor.com/affectnet/) and [FER2013](https://www.kaggle.com/datasets/msambare/fer2013). We further evaluated on a Face Recognition dataset, [LFW](http://vis-www.cs.umass.edu/lfw/). In our experiment, we used the released version provided by scikit-learn. The usage can be found [here](https://scikit-learn.org/0.19/datasets/labeled_faces.html).
 
 The code for evaluation can be found as follows:
+
 AffectNet & LFW: Code have been made available here - [ClaudiaShu/EMO_AffectNet](https://github.com/ClaudiaShu/EMO_AffectNet).
+
 FER2013: We follow [usef-kh/fer](https://github.com/usef-kh/fer) for FER2013 evaluation.
 
 ## Training
