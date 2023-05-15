@@ -139,4 +139,5 @@ Models can be downloaded from [here](https://drive.google.com/file/d/1Ko7bOqCW0q
 
 ## Acknowledgment
 
-Our code is inspired by: [SimCLR](https://github.com/sthalles/SimCLR)
+- Our code is inspired by: [SimCLR](https://github.com/sthalles/SimCLR)
+- The evaluation on FER2013 is based on: [this repo](https://github.com/usef-kh/fer)
