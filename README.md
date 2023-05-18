@@ -83,6 +83,7 @@ Code for [Downstream evaluation]
 .
 ├── data_aug                          
 ├── dataset 
+│   ├── vox1_prep.py                    # Prepare file list of training dataset voxceleb1        
 ├── models 			
 │   ├── model_MLP.py                    # MLP layer              
 │   └── model_RES.py                    # backbone ResNet model      
