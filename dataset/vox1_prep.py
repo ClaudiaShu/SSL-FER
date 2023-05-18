@@ -96,9 +96,6 @@ def prep_faces(root_dir, wav_dir, flist, metadata):
         os.makedirs(cache_dir, exist_ok=True)
         cache_dir = os.path.join(cache_dir, output_mv_dir.split("/")[3])
         os.makedirs(cache_dir, exist_ok=True)
-        # vox1/wav/id10004/seq_id/00001
-        # vox1/intervavlfaces/data/name/1.6/seq_id/1/images
-        # -> vox1/faces/wav/id10004/seq_id/00001/images
         # Get clip info
         clip_name = fid.split('/')[-1].split('.')[0]
         clip_name = str(int(clip_name))
