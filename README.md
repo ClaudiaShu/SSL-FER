@@ -83,6 +83,7 @@ Code for [Downstream evaluation]
 .
 ├── data_aug                          
 ├── dataset   
+│   ├── vox1_frames.txt                 # vox1 frame information
 ├── models 			
 │   ├── model_MLP.py                    # MLP layer              
 │   └── model_RES.py                    # backbone ResNet model      
