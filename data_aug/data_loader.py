@@ -54,7 +54,7 @@ class maskCLR(Dataset):
         # Dataset setting
         self.dataset = self.args.dataset_name
         self.prefix_vox1 = 'pathto/VoxCeleb/vox1'
-        file = "pathto/VoxCeleb/vox1/vox1_frames_test.txt"
+        file = "dataset/vox1_frames.txt"
         self.data = open(file, 'r')
         self.paths, self.start_frames, self.end_frames, self.frames = self.get_frame()
 
@@ -342,7 +342,7 @@ class swapCLR(Dataset):
         # Dataset setting
         self.dataset = self.args.dataset_name
         self.prefix_vox1 = 'pathto/VoxCeleb/vox1'
-        file = "pathto/VoxCeleb/vox1/vox1_frames_test.txt"
+        file = "dataset/vox1_frames.txt"
         self.data = open(file, 'r')
         self.paths, self.start_frames, self.end_frames, self.frames = self.get_frame()
 
