@@ -3,8 +3,7 @@
 **[BMVC 2022]** This is the official code of our Paper "Revisiting Self-Supervised Contrastive
 Learning for Facial Expression Recognition" 
 
-[[project]](https://claudiashu.github.io/SSLFER/) [[paper]](https://bmvc2022.mpi-inf.mpg.de/406/)
-
+[[project]](https://claudiashu.github.io/publications/2022-BMVC/) [[paper]](https://bmvc2022.mpi-inf.mpg.de/406/)
 
 
 ## Citing
