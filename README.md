@@ -1,4 +1,6 @@
 # SSL-FER
+![Stars](https://img.shields.io/github/stars/ClaudiaShu/SSL-FER)
+[![Visits Badge](https://badges.pufler.dev/visits/ClaudiaShu/SSL-FER)](https://badges.pufler.dev/visits/ClaudiaShu/SSL-FER)
 
 **[BMVC 2022]** This is the official code of our Paper "Revisiting Self-Supervised Contrastive
 Learning for Facial Expression Recognition" 
